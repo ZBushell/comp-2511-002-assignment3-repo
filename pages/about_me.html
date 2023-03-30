@@ -5,12 +5,49 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Favorite Things</title>
-    <link rel="icon" type="image/x-icon" href="images/logo.svg">
+    <link rel="icon" type="image/x-icon" href="../images/logo.svg">
     
-    <link rel="stylesheet" href="style/bootstrap-5.0.2-dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="style/default.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../style/bootstrap-5.0.2-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../style/default.css">
 </head>
 <body>
-    
+    <div class="container-fluid">
+        <header>
+            <!--https://getbootstrap.com/docs/5.0/components/navbar/-->
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+                <div class="container-fluid">
+                  <a class="navbar-brand">Zach's Super Awesome Web Page |</a>
+                  
+                  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav">
+                      <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
+                      <a class="nav-link" href="pages/about_me.html">About</a>
+                    </div>
+                  </div>
+                </div>
+            </nav>
+            <figure>
+                <picture>
+                    <img alt="banner" src="">
+                    <img alt="phone_banner" src="">
+                </picture>
+            </figure>
+        </header>
+        <footer class="bg-dark text-light">
+            <section id="socials-bar">
+                <a href="#" class="fa fa-linkedin-square bg-dark text-light"></a>
+                <a href="#" class="fa fa-github-alt bg-dark text-light"></a>
+            </section>
+
+            <p>
+               &copy; 2023-03-29 Zachary Bushell 
+            </p>
+            
+            <a href="https://github.com/twbs/bootstrap/blob/main/LICENSE">Built with Bootstrap</a> 
+            
+            <a class="margin-t-2" href="#top">Back To Top</a>
+        </footer>
+    </div>
 </body>
 </html>

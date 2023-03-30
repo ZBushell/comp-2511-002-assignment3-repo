@@ -1,21 +1,40 @@
+@import "colors.css";
+
+/*Headers*/
 header{
     width: 100%;
     display: flex;
     flex-direction: column;
 }
-footer{
+
+/*General*/
+#quasar{
+    height: 5rem;
+    width: auto;
+    transform: rotate(45deg);
+}
+h1{
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
-footer img{
-    height: 2rem;
-    width: auto;
+picture img{
+    width: 100%;
+    height: auto;
 }
-hr{
-    color: whitesmoke;
-    background-color: whitesmoke;
+
+/*Footers*/
+footer{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+    align-items: center;
+}
+.footerInfo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: right;
 }
 #socials-bar{
     display: flex;
@@ -24,6 +43,21 @@ hr{
     align-items: center;
     height: auto;
 }
+.copyrightInfo{
+    font-size: 0.75rem;
+    margin: 0% !important;
+}
+.logo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+footer img{
+    height: 2rem;
+    width: auto;
+}
 .fa {
     padding: 20px;
     font-size: 30px;
@@ -31,27 +65,22 @@ hr{
     text-align: center;
     text-decoration: none;
 }
-#quasar{
-    height: 5rem;
-    width: auto;
-}
-.test{
-    background-color: seashell;
-}
-h1{
+
+/*Links*/
+footer nav{
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
+    justify-content: center;
 }
 footer a{
-    color: whitesmoke;
+    color: var(--tex-white-default);
     text-decoration: none;
 }
 a:hover{
-    color: #d70087 !important;
+    color: var(--link-highlight) !important;
     text-decoration: underline;
 }
-picture img{
-    width: 100%;
-    height: auto;
+article{
+    background-color: var(--color-article) ;
 }

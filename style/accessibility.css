@@ -1,0 +1,27 @@
+@import "colors.css";
+
+#skipToMain a{
+    position: absolute;
+    top: -100000px;
+    width: 1px;
+    height: 1px;
+}
+#secretToMain{
+    display: hidden;
+}
+#skipToMain a:focus{
+    top: 0px;
+    width: 100%;
+    height: auto;
+    z-index: 5 !important;
+    background-color: var(--text-white-default);
+    
+}
+#secretToMain a:focus{
+    top: 0px;
+    width: 100%;
+    height: auto;
+    z-index: 5 !important;
+    background-color: var(--text-white-default);
+    
+}

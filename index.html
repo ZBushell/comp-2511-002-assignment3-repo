@@ -14,11 +14,15 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="style/bootstrap-5.0.2-dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="style/default.css">
-
+    <link rel="stylesheet" href="style/accessibility.css">
 </head>
 <body>
-    <div class="container-fluid">
+   
+    <div class="container-fluid"> 
         <header>
+            <div id="skipToMain" class="text-dark">
+                <a href="#mainContent">Skip to content</a>
+            </div>
             <!--https://getbootstrap.com/docs/5.0/components/navbar/-->
             <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
                 <div class="container-fluid">
@@ -45,8 +49,8 @@
                     <h1>Zach's Page</h1>
                 </div>
             </container>
-            <container class="row m-5">
-                <article class="col-12 col-md-5 col-lg-6 test">
+            <container class="row m-5" id="mainContent">
+                <article class="col-12 col-md-5 col-lg-6">
                     <h2>A bit about me</h2>
                     <p>Hi! I'm Zach. It's been way to long for me to have not done this yet, but I finally set up a webpage.</p>
                     <p>
@@ -64,35 +68,58 @@
                         I'm currently studying a bachelor's degree of computer information systems and have even managed to make the dean's list a few semesters. I've learned alot (no thanks from the GENED courses)
                         about computers and business in this degree, but I find that some self learning goes a long way instead of just learning through courses. Call it the predilictions of a former Bishop Carrol HS student xD. 
                     </p>
-                    <h3>Personal Projects</h3>
+                   
+                </article>
+                <article class=" col-12  col-md-5 col-lg-6">
+                    <h2>Personal Projects</h2>
                     <p>
                         Mainly the reason why I do University is how much it lets me do with my personal projects. I have 3 that are my obsessions outside of my other obligations. First is my PC. Like vegans
                         (like most vegans) we desktop linux users will shout it from the heavens! I use <a class="text-dark" href="https://nixos.org/" target="_blank">NixOS</a> it's a suuuper cool distro that lets you 
                         reproduce your system configurations based off of one file! know what that means??? Absolutely NO consequences for tinkering! if you pair this with your chosen git remote, you can kiss all those dotfiles
                         goodbye (well not actually but it does cut down the numbers)! As if it wasn't god-tier enough, it now has the calamares installer too. Seriously, try it. Blue screens and broken files will be a thing of the past.               
                     </p>
-                </article>
-                <article class=" col-12  col-md-5 col-lg-6 test">
-                    <h2>Article 2</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur voluptatum provident odit ratione, iusto deleniti laboriosam, blanditiis ipsum recusandae nulla officiis mollitia perspiciatis similique, debitis quis ducimus totam officia doloremque.</p>
+                    <p>
+                        Another one of my projects is modding a game called starsector. I've been working on creating my own custom solar system on it. It's mostly a bunch of method calls that the devs built into their game because they're awesome
+                        and support the modding community to a degree that most other game devs should emulate them. Unfortunately, this project has been on the backburner for about a year simply because I've had more important things to do.
+                    </p>
+                    <p>
+                        Second to last, I've been working my way through the <a href="https://doc.rust-lang.org/stable/book/" target="_blank" class="text-dark">Rust Programming Language Book</a> So that I can learn a programming language that 
+                        isn't java. It's pretty interesting, varable shadowing and the functional approach are my current most favorite things about the language. I'm a baby rustacean but I'm trying to learn more as I go when I have the free time.
+                    </p>
+                    <p>
+                        Finally, my home server. I'm interested in archiving many things that I think are important and should be preserved. Thanks to my grandfather I have an absolute ton of old books and documents that I've been steadily scanning into
+                        the server. I also am running my own DNS because ads are annoying and must be purged with gentile prejudice! It's forced me to learn scripting because I don't want carpel tunnel from all of the file renaming.
+                    </p>
+
                 </article>
           </container>
         </main>
         <footer class="bg-dark text-light">
-            <section id="socials-bar">
-                <a href="https://www.linkedin.com/in/zachary-bushell/" class="fa fa-linkedin-square bg-dark text-light"></a>
-                <a href="https://github.com/ZBushell" class="fa fa-github-alt bg-dark text-light"></a>
-            </section>
-
-            <p>
-               &copy; 2023-03-29 Zachary Bushell 
-            </p>
+            <div class="footerInfo"> 
+                <section id="socials-bar">
+                    <a href="https://www.linkedin.com/in/zachary-bushell/" class="fa fa-linkedin-square bg-dark text-light"></a>
+                    <a href="https://github.com/ZBushell" class="fa fa-github-alt bg-dark text-light"></a>
+                </section>
+                <section class="copyrightInfo">
+                    <p>&copy; 2023-03-29 Zachary Bushell </p>
+                    <p><a href="https://github.com/twbs/bootstrap/blob/main/LICENSE" target="_blank">Built with Bootstrap</a></p> 
+                </section>
+            </div>
             
-            <a href="https://github.com/twbs/bootstrap/blob/main/LICENSE" target="_blank">Built with Bootstrap</a> 
-           
-            <a class="margin-t-2" href="#top">Back To Top</a>
-            <a href="https://www.youtube.com/watch?v=C2pxPRzSi0E" target="_blank" alt="secret video you found by tabbing through! congrats!" ><img src="images/logo_small_white.svg"></a>
+                <nav>
+                    <h4>Navigation</h4>
+                    <a class="margin-t-2" aria-current="page" href="#">Home</a>
+                    <a class="margin-t-2" href="pages/about_me.html">About</a>
+                    <a class="margin-t-2" href="#top">Back To Top</a>
+                </nav>
+            <div class="logo">
+                <img id="quasar" src="images/logo_small_white.svg">
+                <div id="secretToMain" class="text-dark">
+                    <a href="https://www.youtube.com/watch?v=C2pxPRzSi0E" target="_blank" alt="secret video you found by tabbing through! congrats!" >Secret link</a>
+                </div>
+            </div> 
         </footer>
+        
     </div>
 
 </body>

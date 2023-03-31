@@ -9,8 +9,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>about me</title>
     <link rel="icon" type="image/x-icon" href="../images/logo_small_white.svg">
-    
-    <!--S-->
+
+    <!--W3Schools, “How to - social media buttons,” How To Create Social Media Buttons, 2023. [Online]. Available: https://www.w3schools.com/howto/howto_css_social_media_buttons.asp. [Accessed: 30-Mar-2023]. -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="../style/bootstrap-5.0.2-dist/css/bootstrap.min.css"> 
     <link rel="stylesheet" href="../style/default.css">
@@ -19,6 +19,7 @@
 <body>
     <div class="container-fluid">
         <header>
+            <!--P. J. Perri, “Lab 9 Accessibility.” 21-Mar-2023. -->
             <div id="skipToMain" class="text-dark">
                 <a href="#mainContent">Skip to content</a>
             </div>
@@ -40,34 +41,39 @@
                     <source media="(max-width: 480px)" srcset="../images/banner1.png">
                     <source media="(min-width: 922px)" srcset="../images/banner2.jpg">
                     <img alt="banner" src="../images/banner1.png">
+                     <!--Z. Bushell, Banner1. 2019. -->
+                    <!--Z. Bushell, Banner2. 2019. -->
                 </picture>
             </figure>
         </header>
-        <main>
-            <container class="row">
-                <div class="col-12">
-                    <h1>About Me</h1>
-                </div>
-            </container>
-            <container id="mainContent" class="row m-5">
-                <article class="col-12">
-                    
-                    <div class="embed-responsive embed-responsive-21by9 col-12">
-                        <iframe class="embed-responsive-item" src="../documents/Bushell-Zach-Resume.pdf" width="80%" height="1175px"> </iframe>
-                    </div>
-                </article>    
-            </container>
-            <container class="row m-5">
-               <article class="col-12 videoBox">
-                    <h2>Brief Cybersecurity tutorial</h2>
-                    <video preload="metadata" controls height="480" width="600">
-                        <source src="../video/tutorial.mp4" type="video/mp4">
-                        <source src="../video/tutorial.mkv" type="video/mkv">
-                    </video>
-                    <a href="../documents/transcript.txt" target="_blank">Transcript</a>
-                   
-               </article>
-          </container>
+        <main id="mainContent" class="row m-5">
+            
+             <div class="col-12">
+                 <h1>About Me</h1>
+             </div>
+        
+             <article class="col-12">
+                <!--J. T. Mark Otto, “Embeds,” · Bootstrap. [Online]. Available: https://getbootstrap.com/docs/4.0/utilities/embed/. [Accessed: 30-Mar-2023]. -->
+                 <div class="embed-responsive embed-responsive-21by9 col-12">
+                     <iframe class="embed-responsive-item" src="../documents/Bushell-Zach-Resume.pdf" width="80%" height="1175"> </iframe>
+                 </div>
+             </article>    
+          
+            <div class="row m-2">
+                <article class="videoBox">
+                     <h2>Brief Cybersecurity tutorial</h2>
+                     <!--J. T. Mark Otto, “Embeds,” · Bootstrap. [Online]. Available: https://getbootstrap.com/docs/4.0/utilities/embed/. [Accessed: 30-Mar-2023]. -->
+                     <!--This works if the video tag is an <iframe> but doesn't work with the video tag so there can only be one source
+                        if you want the video to be responsive. I chose accessibility over responsiveness.-->   
+                        <div class="embed-responsive embed-responsive-4by3">
+                            <video preload="metadata" controls width="600" height="420">
+                                <source class="embed-responsive-item" src="../video/tutorial.mp4" type="video/mp4">
+                                <source class="embed-responsive-item" src="../video/tutorial.mkv" type="video/mkv">
+                            </video>
+                        </div>
+                     <a href="../documents/transcript.txt" target="_blank">Transcript</a> 
+                </article>
+            </div>
         </main>
         <footer class="bg-dark text-light">
             <div class="footerInfo"> 
@@ -83,14 +89,15 @@
             
                 <nav>
                     <h4>Navigation</h4>
-                    <a class="margin-t-2" aria-current="page" href="#">Home</a>
+                    <a class="margin-t-2" aria-current="page" href="../index.html">Home</a>
                     <a class="margin-t-2" href="pages/about_me.html">About</a>
                     <a class="margin-t-2" href="#top">Back To Top</a>
                 </nav>
             <div class="logo">
-                <img id="quasar" src="../images/logo_small_white.svg">
+                <img id="quasar" src="../images/logo_small_white.svg" alt="personal logo. It's a quasar.">
+                <!--Z. Bushell, logo_small_white. 2023. -->
                 <div id="secretToMain" class="text-dark">
-                    <a href="https://www.youtube.com/watch?v=C2pxPRzSi0E" target="_blank" alt="secret video you found by tabbing through! congrats!" >Secret link</a>
+                    <a href="https://www.youtube.com/watch?v=C2pxPRzSi0E" target="_blank">Secret link</a>
                 </div>
             </div> 
         </footer>

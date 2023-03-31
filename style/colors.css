@@ -1,5 +1,4 @@
 :root{
-
     --text-white-default: whitesmoke;
     --color-article     : #e4e4e4   ;
     --color-primary     : #000e3a   ;
@@ -8,3 +7,4 @@
     --link-highlight    : #d70087   ;
 
 }
+/*Didn't end up using many of these*/

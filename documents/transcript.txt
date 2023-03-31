@@ -1,0 +1,28 @@
+Ok so I'm going to show you something really neat you can do with your Linux Box that could help you improve your digital security
+
+Some people don't know this but your kernel acutally has a really powerful pseudo-random number generator. 
+That can be used for a whole bunch of things, but today we're just going to use it to write some random data to our drive.
+
+So type in this command here and let it run until the terminal gives you an error.
+
+This will take awhile to finish so let me tell you what we're actually doing her and how it improves your digital security.
+
+When a file is deleted it isn't actually deleted. that would take too long for us lazy people to tolerate so we've come up
+with a cheat that saves us time.
+
+Instead of being deleted, all that happens is the addres of the file is removed from the drive's table which makes it
+inaccessible to the computer. It is only truely delteted when the drive writes new data to the memory addres previously
+occupied with the delteted file. 
+
+Te file is still there though and can be retrieved with some difficulty by using specialized recovery software which is what we're
+trying to to prevent with this process. 
+
+What the command we're running is doing is writing random zeros and ones to the whole drive that doesn't have a file stored on it.
+Overwriting any delteted data and preventing anybody who might have your PC from seeing anything you've delteted.
+
+Pretty neat eh?
+
+Quick note. Still encrypt your drive. Don't go to these lengths if you haven't even done that yet. Like seriously, encrypt your
+drive.
+
+Anyways, that's all I really wanted to show you. Bye!

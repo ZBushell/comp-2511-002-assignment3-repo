@@ -7,21 +7,25 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Favorite Things</title>
-    <link rel="icon" type="image/x-icon" href="../images/logo.svg">
+    <title>about me</title>
+    <link rel="icon" type="image/x-icon" href="../images/logo_small_white.svg">
     
+    <!--S-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="../style/bootstrap-5.0.2-dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="style/accessibility.css">
+    <link rel="stylesheet" href="../style/bootstrap-5.0.2-dist/css/bootstrap.min.css"> 
     <link rel="stylesheet" href="../style/default.css">
+    <link rel="stylesheet" href="../style/accessibility.css">
 </head>
 <body>
     <div class="container-fluid">
         <header>
+            <div id="skipToMain" class="text-dark">
+                <a href="#mainContent">Skip to content</a>
+            </div>
             <!--https://getbootstrap.com/docs/5.0/components/navbar/-->
             <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
                 <div class="container-fluid">
-                  <a class="navbar-brand">Zach's Super Awesome Web Page |</a>
+                  <a href="../index.html" class="navbar-brand">Zach's Super Awesome Web Page |</a>
                   
                   <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                     <div class="navbar-nav">
@@ -33,8 +37,9 @@
             </nav>
             <figure>
                 <picture>
+                    <source media="(max-width: 480px)" srcset="../images/banner1.png">
+                    <source media="(min-width: 922px)" srcset="../images/banner2.jpg">
                     <img alt="banner" src="../images/banner1.png">
-                    <img alt="phone_banner" src="">
                 </picture>
             </figure>
         </header>
@@ -44,18 +49,24 @@
                     <h1>About Me</h1>
                 </div>
             </container>
-            <container class="row m-5">
+            <container id="mainContent" class="row m-5">
                 <article class="col-12">
-                   pdf go here
-                </article>
+                    
+                    <div class="embed-responsive embed-responsive-21by9 col-12">
+                        <iframe class="embed-responsive-item" src="../documents/Bushell-Zach-Resume.pdf" width="80%" height="1175px"> </iframe>
+                    </div>
+                </article>    
             </container>
             <container class="row m-5">
-                <article class=" col-12">
-                    <h2>Snapshot of my Interests</h2>
-                    <video controls width="640px" height="480px">
+               <article class="col-12 videoBox">
+                    <h2>Brief Cybersecurity tutorial</h2>
+                    <video preload="metadata" controls height="480" width="600">
                         <source src="../video/tutorial.mp4" type="video/mp4">
+                        <source src="../video/tutorial.mkv" type="video/mkv">
                     </video>
-                </article>
+                    <a href="../documents/transcript.txt" target="_blank">Transcript</a>
+                   
+               </article>
           </container>
         </main>
         <footer class="bg-dark text-light">

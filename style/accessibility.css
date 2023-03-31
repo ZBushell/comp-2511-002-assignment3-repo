@@ -6,7 +6,7 @@
     width: 1px;
     height: 1px;
 }
-#secretToMain{
+#secretToMain a{
     display: hidden;
 }
 #skipToMain a:focus{
